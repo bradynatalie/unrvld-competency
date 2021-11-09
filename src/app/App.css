@@ -24,11 +24,12 @@
   background-color: #E8E8E8;
 }
 .accordion__content {
-  height: 0px;
+  max-height: 0px;
   overflow: hidden;
 }
 .accordion__content.active {
-  height: auto;
+  max-height: 500px;
+  transition: max-height 0.25s ease-in;
   padding-right: 20px;
   padding-left: 20px;
   padding-bottom: 20px;
@@ -74,6 +75,19 @@
 .cta-grid__subheader p {
   margin-top: 5px;
   margin-bottom: 5px;
+}
+.cta-grid__button {
+  display: inline-block;
+  background-color: #00AFDB;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  text-decoration: none;
+  color: #fff;
+  padding: 10px;
+  transition: background-color 0.5s;
+}
+.cta-grid__button:hover {
+  background-color: #33C8E9;
 }
 
 .app {

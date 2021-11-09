@@ -18,6 +18,7 @@ function CTAGrid(props) {
                                     <p>{item.tagline}</p>
                                     <p>ABV: {item.abv}</p>
                                 </div>
+                                <a href="https://www.brewdog.com/uk/" className="cta-grid__button" target="_blank" rel="noreferrer">Find out more</a>
                             </div>
                         </div>
                     )
