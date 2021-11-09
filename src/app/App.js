@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from "react";
 
 import Accordion from './components/accordion/accordion.jsx';
+import CTAGrid from './components/cta-grid/cta-grid.jsx';
 
 import './App.min.css';
 
@@ -26,6 +27,11 @@ function App() {
         <div className="app__section">
           <h2 className="app__subtitle">Accordion</h2>
           <Accordion data={beers} />
+        </div>
+
+        <div className="app__section">
+          <h2 className="app__subtitle">CTA Grid</h2>
+          <CTAGrid data={beers} />
         </div>
     </div>
   );

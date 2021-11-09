@@ -1,0 +1,48 @@
+.cta-grid {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+
+    &__item {
+        width: 100%;
+        margin: {
+            top: 20px;
+            bottom: 20px;
+        }
+
+        @media screen and (min-width: 400px) {
+            width: 49%;
+        }
+
+        @media screen and (min-width: 600px) {
+            width: 32%;
+        }
+
+        @media screen and (min-width: 768px) {
+            width: 24%;
+        }
+    }
+
+    &__image {
+        height: 200px;
+        width: auto;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
+
+    &__header {
+        text-align: center;
+    }
+
+    &__subheader {
+        p {
+            margin: {
+                top: 5px;
+                bottom: 5px;
+            }
+        }
+    }
+}
+
