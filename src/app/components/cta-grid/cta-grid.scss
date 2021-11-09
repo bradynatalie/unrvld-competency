@@ -44,5 +44,20 @@
             }
         }
     }
+
+    &__button {
+        display: inline-block;
+        background-color: #00AFDB;
+        border: 1px solid transparent;
+        border-radius: 4px;
+        text-decoration: none;
+        color: #fff;
+        padding: 10px;
+        transition: background-color 0.5s;
+
+        &:hover {
+            background-color: #33C8E9;
+        }
+    }
 }
 
