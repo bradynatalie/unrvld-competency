@@ -35,6 +35,47 @@
   padding-top: 20px;
 }
 
+.cta-grid {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.cta-grid__item {
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 400px) {
+  .cta-grid__item {
+    width: 49%;
+  }
+}
+@media screen and (min-width: 600px) {
+  .cta-grid__item {
+    width: 32%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .cta-grid__item {
+    width: 24%;
+  }
+}
+.cta-grid__image {
+  height: 200px;
+  width: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.cta-grid__header {
+  text-align: center;
+}
+.cta-grid__subheader p {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
 .app {
   max-width: 1600px;
   text-align: center;
