@@ -1,0 +1,35 @@
+@import 'components/accordion/accordion';
+
+.app {
+    max-width: 1600px;
+    text-align: center;
+
+    margin: {
+        left: auto;
+        right: auto;
+    }
+    padding: {
+        top: 50px;
+        bottom: 50px;
+        left: 30px;
+        right: 30px;
+    }
+
+    &__section {
+        margin: {
+            top: 40px;
+            bottom: 40px;
+        }
+    }
+
+    &__title {
+        margin-bottom: 30px;
+    }
+
+    &__subtitle {
+        margin: {
+            top: 10px;
+            bottom: 10px;
+        }
+    }
+}
