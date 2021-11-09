@@ -1,6 +1,7 @@
 import React from "react";
 
 function CTAGrid(props) {
+    // check data passed through is an array
     const checkArray = Array.isArray(props.data)
 
     return (

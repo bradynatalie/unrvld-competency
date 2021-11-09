@@ -6,11 +6,14 @@ import CTAGrid from './components/cta-grid/cta-grid.jsx';
 import './App.min.css';
 
 function App() {
-
+  // set state of beers data when fetched
   const [beers, setBeers] = useState(null);
+  // set state of sorted beers
   const [data, setData] = useState(beers);
+  // set state of dropdown select
   const [sortType, setSortType] = useState('name');
 
+  // hook to get the API data on load
   useEffect(() => {
     getBeers();
 
@@ -22,17 +25,22 @@ function App() {
     }
   }, [])
 
+  // hook to get the dropdown select value and sort data based on value given
   useEffect(() => {
+    // check data passed in is an array
     const checkArray = Array.isArray(beers)
 
+    // sorting name in alphabetical order
     const sortByName = sortProperty => (a, b) => {
         if (a[sortProperty] < b[sortProperty]) {return -1;}
         if (a[sortProperty] > b[sortProperty]) {return 1;}
         return 0;
     }
 
+    // creating new array for the sorted data
     const newBeersArray = checkArray && ([...beers]);
-  
+    
+    // check the passed in dropdown select value against the types object below and use it to sort the array by value
     const sortArray = type => {
       const types = {
         name: 'name',
