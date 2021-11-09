@@ -1,0 +1,53 @@
+.accordion {
+    max-width: 1000px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    
+    margin: {
+        left: auto;
+        right: auto;
+    }
+
+    &__item {
+        background-color: #F8F8F8;
+        margin: {
+            bottom: 5px;
+        }
+    }
+
+    &__header {
+        cursor:pointer;
+        transition: background-color 0.5s;
+
+        padding: {
+            right: 20px;
+            left: 20px;
+            top: 10px;
+            bottom: 10px;
+        }
+
+        &.active {
+            background-color: #E8E8E8;
+        }
+
+        &:hover {
+            background-color: #E8E8E8;
+        }
+    }
+
+    &__content {
+        height: 0px;
+        overflow: hidden;
+
+        &.active {
+            height: auto;
+
+            padding: {
+                right: 20px;
+                left: 20px;
+                bottom: 20px;
+                top: 20px;
+            }
+        }
+    }
+}
